@@ -1,0 +1,97 @@
+### register user 1
+
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "email" : "test@gmail.com",
+    "password":"test",
+    "name":"test",
+    "firstname":"test"
+}
+
+### login
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email":"test@gmail.com",
+    "password":"test"
+}
+
+### check users
+
+GET http://localhost:3000/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbnJ5M0BnbWFpbC5jb20iLCJwc3dkIjoiaGVucnkiLCJpYXQiOjE2NTI3MTYyMDR9.EmIzEongnrRAl4ErqvVgk4SB4i7tEg0kgeT2KajyVPY
+
+### check todos
+
+GET http://localhost:3000/user/todos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbnJ5NEBnbWFpbC5jb20iLCJwc3dkIjoiaGVucnkiLCJpYXQiOjE2NTI4MDg4NDB9.Hz3TCXSFvKSCQXTTHjJe1UxglrjaQa4xxWqoSLieqJs
+
+### check mail and id info
+
+GET http://localhost:3000/user/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
+
+### update info
+
+PUT http://localhost:3000/user/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
+Content-Type: application/json
+
+{
+    "email" : "test@gmail.com",
+    "password" : "test1",
+    "name" : "test1",
+    "firstname" : "test1"
+}
+
+### delete user
+
+DELETE http://localhost:3000/user/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
+
+### check all todos
+
+GET http://localhost:3000/todos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
+
+### check a todos
+
+GET http://localhost:3000/todos/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
+
+### creat a todos
+
+POST http://localhost:3000/todos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
+Content-Type: application/json
+
+{
+    "title" : "Epytodo",
+    "description" : "finish corewar",
+    "due_time" : "2022-05-16 18:43:00",
+    "user_id" : "5",
+    "status" : "in work"
+}
+
+### update a todo
+
+PUT http://localhost:3000/todos/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
+Content-Type: application/json
+
+{
+    "title" : "Epytodo",
+    "description" : "test",
+    "due_time" : "2022-05-16 18:24:00",
+    "user_id" : "1",
+    "status" : "in progress"
+}
+
+### delete a todo
+
+DELETE http://localhost:3000/todos/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
