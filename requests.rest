@@ -23,22 +23,22 @@ Content-Type: application/json
 ### check users
 
 GET http://localhost:3000/user
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbnJ5M0BnbWFpbC5jb20iLCJwc3dkIjoiaGVucnkiLCJpYXQiOjE2NTI3MTYyMDR9.EmIzEongnrRAl4ErqvVgk4SB4i7tEg0kgeT2KajyVPY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlbnJ5M0BnbWFpbC5jb20iLCJwc3dkIjoiaGVucnkiLCJpYXQiOjE2NTI3MTYyMDR9.EmIzEongnrRAl4ErqvVgk4SB4i7tEg0kgeT2KajyVPY
 
 ### check todos
 
 GET http://localhost:3000/user/todos
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbnJ5NEBnbWFpbC5jb20iLCJwc3dkIjoiaGVucnkiLCJpYXQiOjE2NTI4MDg4NDB9.Hz3TCXSFvKSCQXTTHjJe1UxglrjaQa4xxWqoSLieqJs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbJ5NEBnbWFpbC5jb20iLCJwc3dkIjoiaGVucnkiLCJpYXQiOjE2NTI4MDg4NDB9.Hz3TCXSFvKSCQXTTHjJe1UxglrjaQa4xxWqoSLieqJs
 
 ### check mail and id info
 
 GET http://localhost:3000/user/4
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
 
 ### update info
 
 PUT http://localhost:3000/user/2
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eylbWFpbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
 Content-Type: application/json
 
 {
@@ -51,22 +51,22 @@ Content-Type: application/json
 ### delete user
 
 DELETE http://localhost:3000/user/4
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eylbWFpbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
 
 ### check all todos
 
 GET http://localhost:3000/todos
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJbWFpbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
 
 ### check a todos
 
 GET http://localhost:3000/todos/5
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbFpbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
 
 ### creat a todos
 
 POST http://localhost:3000/todos
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
 Content-Type: application/json
 
 {
@@ -80,7 +80,7 @@ Content-Type: application/json
 ### update a todo
 
 PUT http://localhost:3000/todos/5
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
 Content-Type: application/json
 
 {
@@ -94,4 +94,4 @@ Content-Type: application/json
 ### delete a todo
 
 DELETE http://localhost:3000/todos/5
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inlc3RAZ21haWwuY29tIiwicHN3ZCI6ImhlbnJ5IiwiaWF0IjoxNjUyNjQyODY3fQ.N-HxGOP_-TdV-G6sqSL-_z_YQgPe4Dql_dRV2u_UXuE
